@@ -1,0 +1,18 @@
+.year-picker {
+    display: flex;
+    align-items: center;
+}
+
+.year-change {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.year-change:hover {
+    background-color: var(--color-hover);
+}

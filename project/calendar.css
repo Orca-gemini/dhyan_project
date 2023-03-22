@@ -1,0 +1,90 @@
+
+.calendar {
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.light .calendar {
+    box-shadow: var(--shadow);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+    color : black;
+    padding: 10px;
+}
+
+.calendar-body {
+    padding: 100px;
+}
+
+.calendar-week-day {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+}
+
+.calendar-week-day div {
+    display: grid;
+    place-items: center;
+    color: rgb(250, 249, 249);
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: black;
+}
+
+.calendar-days div {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+}
+
+.calendar-days div span {
+    position: absolute;
+}
+
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+    background-color: light;
+    color: var(--red);
+    border-radius: 60%;
+}
+
+.calendar-days div.curr-date span {
+    display: none;
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle {
+    display: flex;
+}
+
+.toggle span {
+    margin-right: 10px;
+    color: var(--color-txt);
+}
+
+
