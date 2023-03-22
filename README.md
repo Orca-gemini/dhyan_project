@@ -1,1 +1,1 @@
-# dhyan_project
+# dhyana_project
